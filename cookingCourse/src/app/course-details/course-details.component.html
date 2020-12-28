@@ -1,0 +1,21 @@
+<!-- This is the expanded info section with price, description, ability to add course to shopping cart or go back to courses -->
+<div class="container-fluid d-flex">
+  <div class="row justify-content-center m-4 col-lg-8 mx-auto py-4 rounded" id="details">
+    <div class="col-12 text-white text-center justify-content-center align-self-center pt-3">
+      <h5>{{course.title}}</h5>
+      <p>{{course.description2}}</p>
+      <p>Price for this course: {{course.price}}€</p>
+      <div class="row">
+        <img src="{{course.img2}}" class="col-4" style="height: 10rem; object-fit: cover; overflow: hidden;">
+        <img src="{{course.img3}}" class="col-4" style="height: 10rem; object-fit: cover; overflow: hidden;">
+        <img src="{{course.img4}}" class="col-4" style="height: 10rem; object-fit: cover; overflow: hidden;">
+      </div>
+      <p class="m-3 ">What you're going to get with this course:</p>
+      <p>{{course.result}}</p>
+      <div class="">
+        <button class="btn btn-outline-light m-3" (click)="addToCart(course)">Add Course</button>
+        <button class="btn btn-outline-light m-3" routerLink="/courses"> Back to Courses</button>
+      </div>
+    </div>
+  </div>
+</div>

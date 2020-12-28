@@ -1,0 +1,29 @@
+<!-- This is the navbar. We incorporated the hero image within the navbar to hopefully make cleaner code and make it a bit easier to manipulate -->
+<div class="content">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand navbar-light text-light" routerLink="/">Damien's Cooking Corner</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" (click)="scroll()" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto third-flickerr">
+          <a class="nav-link text-light" routerLink="/">Home</a>
+          <a class="nav-link text-light first-flicker"routerLink="/courses">Courses</a>
+          <a class="nav-link text-light" routerLink="/news">What's cooking?(News)</a>
+          <a class="nav-link text-light second-flicker" routerLink="/testimonials">Testimonials</a>
+          <a class="nav-link text-light" routerLink="/contact">Contact Us</a>
+          <a class="nav-link text-light" routerLink="/cart">Checkout</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron bg-transparent text-light mt-lg-5 px-0">
+        <h1 class="display-6 display-md-5">Coo<span class="third-letter-flicker">k</span>in<span class="first-letter-flicker">g</span> f<span class="third-letter-flicker">o</span>r</h1>
+        <h1 class="display-4 display-md-3">Ghoul<span class="second-letter-flicker">s</span> and Gals alike</h1>
+        <p class="lead col-7 d-none d-md-block pb-3">Cooking classes offered with a twist. Experience cooking in a way you never experienced before. See if you come out alive...</p>
+        <a class="btn btn-transparent btn-lg btn-outline-light third-flicker d-none d-lg-inline"routerLink="/courses" role="button">Courses</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<!-- contact page -->
+<h2 class="pb-3 mt-5 text-center text-light justify-content-center">Contact us</h2>
+<div class="black mb-4">
+  <div class="container p-4" id="contact">
+    <form class="col-lg-6 offset-lg-3 formStyle" [formGroup]="contact" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group col-12">
+          <label for="firstname">Name: </label>
+          <input type="text" class="form-control" formControlName="firstName" placeholder="Name" id="firstname">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-12">
+          <label for="inputEmail4">Email: </label>
+          <input type="email" class="form-control" formControlName="email" id="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-12">
+          <label for="exampleFormControlTextarea1">Your message: </label>
+          <textarea class="form-control" id="message" formControlName="message" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check col-12">
+          <input class="form-check-input" formControlName="conditions" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="offset-5 btn btn-warning">Send</button>
+    </form>
+  </div>
+</div>

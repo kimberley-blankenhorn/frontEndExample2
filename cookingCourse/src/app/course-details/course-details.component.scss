@@ -1,0 +1,21 @@
+    #details {
+        background-color: rgb(19, 19, 19);
+        box-shadow: 2px 3px 15px 3px black;
+    }
+    
+    p,
+    h1,
+    h5 {
+        text-shadow: 0 0 3px #FF3300, 0 0 5px #FF3300;
+    }
+    
+    .btn {
+        text-shadow: 0 0 3px #FF3300, 0 0 5px #FF3300;
+        font-family: 'Henny Penny', cursive;
+    }
+    
+    @media screen and (max-width:768px) {
+        #img {
+            display: none;
+        }
+    }

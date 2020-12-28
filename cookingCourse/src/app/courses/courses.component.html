@@ -1,0 +1,13 @@
+<!-- This section will be where all the courses are displayed. The headline will be the link to the description and price. Everything is pulled from the courses.ts file -->
+<div class="container mt-5">
+  <div class="row m-auto justify-content-center align-content-center">
+    <h1 class=" col-12 text-center text-light justify-content-center" id="h2">Our Courses</h1>
+    <div class="row shake card col-sm-12 col-md-5 col-lg-3 m-2 mb-lg-5 mx-4 text-light" style="width: 18rem;" *ngFor="let course of courses, index as courseId" id="info">
+      <img class="card-img-top mt-2 mx-auto" src="{{course.img}}" alt="{{course.title}}" style="height: 10rem; object-fit: cover; overflow: hidden;">
+      <div class="card-body text-center">
+        <a class="" [routerLink]="['/courses', courseId]">{{course.title}}</a>
+        <p class="card-text">{{course.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
